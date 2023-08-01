@@ -34,22 +34,23 @@ body {
 .Tabs ul {
     list-style: none; /* Remove bullet points from the tabs */
     color:black;
+    padding: 25px;
+    justify-content: space-between;
+    
 }
 .Title {
     text-decoration:overline;
+    padding: 20px;
     background-color:#ccdcc1;
     color:#4f4e4f;
-}
-
-.About,
-.Projects,
-.Contact {
-    
 }
 
 #About,
 #Projects,
 #Contact {
+    justify-content:center;
     background-color:#ccdcc1;
+    padding: 60px;
     color:#7a8473;
+    border-style:solid;
 }
