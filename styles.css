@@ -1,56 +1,226 @@
-.Name {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#7a8473;
+:root {
+    --primary-color: #ce7e00;
+    --secondary-color: #7a8473;
+    --bg-color: #ccdcc1;
+    --content-bg-color: #f2f2f2;
+}
+
+/*Global setting*/
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
 }
 
 header {
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-color:#cfccb6;
+    background-color: #cfccb6;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+.Name {
+    font-family:fantasy;
+    margin-left:25px;
+    color: var(--primary-color);
 }
 
 .Nemi img {
-    width: 200px; /* Set the width to your desired size */
-    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    width: 200px;
+    height: auto;
     border-radius:25%;
-    
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
 }
 
-body {
-    background-color:#ccdcc1;
+/*Title and navigation settings*/
+nav {
+    display: flex;
+}
+
+nav a {
+    padding: 14px 20px;
+    text-align: center;
 }
 
 .Tabs {
-    background-color: #f2f2f2;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
-    flex-wrap: wrap; /* Enable wrapping */
-    justify-content:flex-start;
-    padding: 10px;
-    color:#ccdcc1;
+    flex-wrap: wrap;
+    justify-content:center;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    font-family:fantasy;
+    font-size:20px;
 }
 
 .Tabs ul {
-    list-style: none; /* Remove bullet points from the tabs */
-    color:black;
-    padding: 25px;
-    justify-content: space-between;
-    
-}
-.Title {
-    text-decoration:overline;
-    padding: 20px;
-    background-color:#ccdcc1;
-    color:#4f4e4f;
+    list-style: none;
+    margin:0;
+    display: flex;
 }
 
+.Tabs ul li {
+    margin: 0;
+}
+
+.Title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    text-align:justify;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    border-width: 1px;
+    text-decoration:overline;
+}
+
+/*Main settings*/
 #About,
-#Projects,
 #Contact {
     justify-content:center;
-    background-color:#ccdcc1;
-    padding: 60px;
-    color:#7a8473;
-    border-style:solid;
+    background-color: var(--bg-color);
+    padding: 20px;
+    color: var(--secondary-color);
+    border-style:double;
+}
+
+#Projects {
+    justify-content:center;
+    background-color: var(--bg-color);
+    padding:20px;
+    color: var(--secondary-color);
+    border-style: double;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.ProjectBox {
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+    border-style:double;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+}
+
+.ProjectBox img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.ProjectBox h3 {
+    margin-top:10px;
+    font-size:16px;
+    color: var(--primary-color);
+}
+
+/*GitHub Sample settings*/
+.GitHub {
+    border-style:double;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+}
+.GitHub img {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.GitHub h3 {
+    margin-top:10px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.GitHubContent {
+    padding: 10px;
+    background-color: var(--content-bg-color);
+    border-radius: 5px;
+}
+
+/* Styles for desktops */
+@media screen and (min-width: 1200px) {
+    header {
+        padding-bottom: 30px;
+    }
+    .Nemi img {
+        width: 250px;
+    }
+    .ProjectBox {
+        width: 200px;
+        height: 350px;
+    }
+    .GitHub {
+        width: 50%;
+    }
+    .GitHub h3 {
+        font-size: 24px;
+    }
+}
+
+/* Styles for tablets */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    header {
+        padding-bottom: 20px;
+    }
+    .Name {
+        margin-left: 40%;
+    }
+    .Nemi img {
+        width: 180px;
+    }
+    .ProjectBox {
+        width: 26%;
+    }
+    .GitHub {
+        width: 70%;
+    }
+    .GitHub h3 {
+        font-size: 20px;
+    }
+}
+
+/* Styles for small screens (mobile) */
+@media screen and (max-width: 767px) {
+    header {
+        padding-bottom: 15px;
+    }
+    .Name {
+        margin-left: 25%;
+    }
+    .Nemi img {
+        width: 75%;
+        margin-left:50px;
+        align-content:center;
+    }
+    .Tabs {
+        padding:20px;
+        margin-right: 0px;
+    }
+    .Tabs ul {
+        list-style: none;
+        margin:1px;
+        padding: 0.7px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center;
+    }
+      .ProjectBox {
+        width: 100%;
+    }    
+    .GitHub {
+        width: 100%;
+    }
+    .GitHub h3 {
+        font-size: 18px;
+    }
 }
