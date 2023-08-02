@@ -1,7 +1,6 @@
 # Nohemi's Professional Portfolio
 
-![Nohemi's Professional Portfolio]([Portfolio Screenshot](https://github.com/NemiMoser/Challenge-02-Professional-Portfolio/assets/135074383/55da308a-c7e0-4740-a088-d81ede4a9f6b)
-ot.jpg)
+![Nohemi's Professional Portfolio]([Portfolio Screenshot](https://github.com/NemiMoser/Challenge-02-Professional-Portfolio/assets/135074383/55da308a-c7e0-4740-a088-d81ede4a9f6b))
 
 ## Table of Contents
 
@@ -34,7 +33,7 @@ To view the portfolio, open the `index.html` file in your web browser.
 
 ## Live Demo
 
-You can view the live demo of the portfolio at
+You can view the live demo of the portfolio at https://nemimoser.github.io/Challenge-02-Professional-Portfolio/.
 
 ## Contact
 
