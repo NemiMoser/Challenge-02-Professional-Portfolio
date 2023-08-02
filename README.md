@@ -45,3 +45,7 @@ Please reach out to me with any questions:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+This project contains a clone of the original repository urban-onto-telegram (https://github.com/coding-boot-camp/urban-octo-telegram)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 This was previously cloned into my own repository and edited in order to complete a challenge illustrating the usage of HTML and CSS on a webpage to follow accessibility standards.}
