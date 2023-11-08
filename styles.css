@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #ce7e00;
-    --secondary-color: #7a8473;
-    --bg-color: #ccdcc1;
+    --primary-color: #282119;
+    --secondary-color: #282119;
+    --bg-color: #e5d8bd;
     --content-bg-color: #f2f2f2;
 }
 
@@ -11,13 +11,13 @@
   }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     background-color: var(--bg-color);
 }
 
 header {
-    background-color: #cfccb6;
+    background-color: #282119;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,9 +25,9 @@ header {
 }
 
 .Name {
-    font-family:fantasy;
+    font-family: 'Montserrat', sans-serif;
     margin-left:25px;
-    color: var(--primary-color);
+    color: #c97338;
 }
 
 .Nemi img {
@@ -54,7 +54,7 @@ nav a {
     background-color: var(--bg-color);
     color: var(--secondary-color);
     padding: 20px;
-    font-family:fantasy;
+    font-family: 'Montserrat', sans-serif;
     font-size:20px;
 }
 
